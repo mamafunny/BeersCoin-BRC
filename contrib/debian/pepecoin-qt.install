@@ -1,0 +1,6 @@
+usr/local/bin/beerscoin-qt usr/bin
+share/pixmaps/beerscoin32.xpm usr/share/pixmaps
+share/pixmaps/beerscoin16.xpm usr/share/pixmaps
+share/pixmaps/beerscoin128.png usr/share/pixmaps
+debian/beerscoin-qt.desktop usr/share/applications
+debian/beerscoin-qt.protocol usr/share/kde4/services/

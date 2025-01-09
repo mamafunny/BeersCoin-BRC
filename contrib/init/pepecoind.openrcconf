@@ -1,0 +1,33 @@
+# /etc/conf.d/beerscoind: config file for /etc/init.d/beerscoind
+
+# Config file location
+#BEERSCOIND_CONFIGFILE="/etc/beerscoin/beerscoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BEERSCOIND_USER)
+#BEERSCOIND_PIDDIR="/var/run/beerscoind"
+
+# What filename to give the pidfile
+#BEERSCOIND_PIDFILE="${BEERSCOIND_PIDDIR}/beerscoind.pid"
+
+# Where to write beerscoind data (be mindful that the blockchain is large)
+#BEERSCOIND_DATADIR="/var/lib/beerscoind"
+
+# User and group to own beerscoind process
+#BEERSCOIND_USER="beerscoin"
+#BEERSCOIND_GROUP="beerscoin"
+
+# Path to beerscoind executable
+#BEERSCOIND_BIN="/usr/bin/beerscoind"
+
+# Nice value to run beerscoind under
+#BEERSCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BEERSCOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for beerscoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BEERSCOIND_SIGTERM_TIMEOUT=60

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Beerscoin Core
+Comment=Connect to the Beerscoin P2P Network
+Comment[de]=Verbinde mit dem Beerscoin peer-to-peer Netzwerk
+Comment[fr]=Beerscoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Beerscoin, eşten eşe kriptografik sanal para birimi
+Exec=beerscoin-qt %u
+Terminal=false
+Type=Application
+Icon=beerscoin128
+MimeType=x-scheme-handler/beerscoin;
+Categories=Office;Finance;
