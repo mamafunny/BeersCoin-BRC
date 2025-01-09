@@ -10,14 +10,30 @@ BeersCoin(BRC) / Scrypt / Proof of Work
 
 Total supply unlimited coins, special rewards system.
 
-random block rewards
+Random block rewards
 
-50% chance of 25 coins/block
-20% chance of 50 coins/block
-14% chance of 100 coins/block
-10% chance of 200 coins/block
-5% chance of 300 coins/block
-1% chance of 500 coins/block
+<table border="1" width="16%">
+	<tr>
+		<td><b>50% chance of 25 coins/block</b></td>
+	</tr>
+	<tr>
+		<td><b>20% chance of 50 coins/block</b></td>
+	</tr>
+	<tr>
+		<td><b>14% chance of 100 coins/block</b></td>
+	</tr>
+	<tr>
+		<td><b>10% chance of 200 coins/block</b></td>
+	</tr>
+	<tr>
+		<td><b>5% chance of 300 coins/block</b></td>
+	</tr>
+	<tr>
+		<td><b>1% chance of 500 coins/block</b></td>
+	</tr>
+</table>
+
+
 
 Unlimited supply - no halving - no premine - no dev fee
 
