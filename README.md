@@ -1,7 +1,7 @@
 <h1 align="center">
 
 <br/><br/>
-Beerscoin Core [BRC, Ᵽ]
+Beerscoin Core [BRC]
 </h1>
 
 Select language: EN | [CN](./README_zh_CN.md) | [PT](./README_pt_BR.md) | [FA](./README_fa_IR.md) | [VI](./README_vi_VN.md) | [FR](./README_fr_FR.md) | [JA](./README_ja_JP.md) | [DE](./README_de_DE.md)
