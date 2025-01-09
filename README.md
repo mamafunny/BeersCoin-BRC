@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="https://i.imgur.com/DDkfI9i.png" alt="Beerscoin" width="300"/>
+
 <br/><br/>
 Beerscoin Core [BRC, Ᵽ]
 </h1>
