@@ -8,7 +8,7 @@ BeersCoin(BRC) / Scrypt / Proof of Work
 
 
 
-Total supply unlimited coins, special rewards system.
+unlimited supply coins, special rewards system.
 
 Random block rewards
 
