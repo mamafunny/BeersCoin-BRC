@@ -81,7 +81,7 @@ public:
         consensus.nMajorityWindow = 2000;
         // BIP34 is never enforced in Beerscoin v2 blocks, so we enforce from v3
         consensus.BIP34Height = 1000;
-        consensus.BIP34Hash = uint256S("0x00"); //BRC TODO: Replace this with block 1000 hash after mainnet launches
+        consensus.BIP34Hash = uint256S("0x3094b8e7be0e5ac31855bdd87dfae88dc7e2a7c79190cabbc9afb05bba7933fd"); // block 1000
         consensus.BIP65Height = 1000;
         consensus.BIP66Height = 1000;
         consensus.powLimit = uint256S("0x00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20;
@@ -110,10 +110,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // Disabled
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000000000010001"); // 327239
+        consensus.nMinimumChainWork = uint256S("000000000000000000000000000000000000000000000000014191e3c00a76b1"); // 4000
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0xc8730d3a53720beb13d2b0d438d7a2bfb26038356927a9a3b7cce12a63ae6f32"); // 327239
+        consensus.defaultAssumeValid = uint256S("0xa1cb1eef8c9c7b4f7e361d710f7558f4f375f2e7ed9117bcf0ca2fbb72a658f4"); // 4000
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x007f; // 127
@@ -161,8 +161,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0xe31d7b5672de672f7afc133722439c50eb2982cbc04ffb2b415ebc376e0469b2"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        // vSeeds.push_back(CDNSSeedData("beerscoin.com", "seeds.beerscoin.com"));
-        // vSeeds.push_back(CDNSSeedData("beersblocks.com", "seeds.beersblocks.com"));
+        vSeeds.push_back(CDNSSeedData("beerscoin.com", "dnsseed.beerscoin.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,25); // Addresses start with B
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,60);
@@ -181,6 +180,10 @@ public:
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
             ( 0, uint256S("0xc8730d3a53720beb13d2b0d438d7a2bfb26038356927a9a3b7cce12a63ae6f32"))
+            ( 1000, uint256S("0x3094b8e7be0e5ac31855bdd87dfae88dc7e2a7c79190cabbc9afb05bba7933fd"))
+            ( 2000, uint256S("0x71ad4d895e5f2821d22ae3c0e3853f2456dcaf23c1a2c714909419dc28150957"))
+            ( 3000, uint256S("0xc62fc6d4cc3d9b103160e641d68bcd2ece3701654a73b010f1ffd61645d73f9e"))
+            ( 4000, uint256S("0xa1cb1eef8c9c7b4f7e361d710f7558f4f375f2e7ed9117bcf0ca2fbb72a658f4"))
         };
 
         chainTxData = ChainTxData{ };
