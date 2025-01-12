@@ -45,8 +45,9 @@ P2P 19618
 Random rewards start at block height 102. Block maturity 25 confirmation. After reach 1000 block digishield active and the block maturity will change to 240 confirmation. It will stay at 240 confirmation until auxpow active at block 42000. After block 42000 it returns to block maturity 25 confirmation.
 
 
-Discord: https://discord.gg/PwnCxWEFMM
-X: https://x.com/beerscoin_lover
-https://github.com/BeersCoin/BeersCoin-BRC
-Explorer: https://explorer.beerscoin.com/
-Website under construction
+<p><b>Discord: https://discord.gg/PwnCxWEFMM<br>
+X: https://x.com/beerscoin_lover<br>
+https://github.com/BeersCoin/BeersCoin-BRC<br>
+Explorer: https://explorer.beerscoin.com/<br>
+Website: https://beerscoin.com/</b></p>
+
