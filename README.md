@@ -42,7 +42,7 @@ P2P 19618
 
 1 Minute Block Targets
 
-Random rewards start at block height 102. Block maturity 25 confirmation. After reach 1000 block digishield active and the block maturity will change to 240 confirmation. It will stay at 240 confirmation until auxpow active at block 42000. After block 42000 it returns to block maturity 25 confirmation.
+Random rewards start at block height 102. Block maturity 25 confirmation. After reach 1000 block digishield active and the block maturity will change to 240 confirmation. It will stay at 240 confirmation until auxpow active at block 14000. After block 14000 it returns to block maturity 25 confirmation.
 
 
 <p><b>Discord: https://discord.gg/PwnCxWEFMM<br>

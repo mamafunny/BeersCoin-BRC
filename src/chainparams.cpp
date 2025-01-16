@@ -130,10 +130,10 @@ public:
         digishieldConsensus.nPowTargetTimespan = 60; // post-digishield: 1 minute
         digishieldConsensus.nCoinbaseMaturity = 240;
 
-        // Blocks 42,000+ are AuxPoW
+        // Blocks 14,000+ are AuxPoW
         // Some tests from Dogecoin expect non-auxpow blocks. This allows those tests to pass.
         auxpowConsensus = digishieldConsensus;
-        auxpowConsensus.nHeightEffective = 42000;
+        auxpowConsensus.nHeightEffective = 14000;
         auxpowConsensus.fAllowLegacyBlocks = false;
 
         // Assemble the binary search tree of consensus parameters

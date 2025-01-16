@@ -45,7 +45,7 @@
 * Create new `about.png` with a Beerscoin logo
 * Add new design for `paper_wallet.png`
 * Remove Dogecoin explorer urls
-* Update tx urls in gui to point to the Beerscoin blockchain explorer BeersExplorer.com
+* Update tx urls in gui to point to the Beerscoin blockchain explorer explorer.beerscoin.com
 
 ####Documentation
 
