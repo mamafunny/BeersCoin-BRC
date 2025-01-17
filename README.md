@@ -37,10 +37,10 @@ Random block rewards
 
 Unlimited supply - no halving - no premine - no dev fee
 
-RPC 19617
-P2P 19618
 
-1 Minute Block Targets
+<p>RPC 19617</p>
+<p>P2P 19618</p>
+<p>1 Minute Block Targets </p>
 
 
 <p><b>Discord: https://discord.gg/PwnCxWEFMM<br>
