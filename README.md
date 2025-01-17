@@ -35,7 +35,7 @@ Random block rewards
 
 
 
-Unlimited supply - no halving - no premine - no dev fee
+Unlimited supply - no halving - no premine - No team allocation fund
 
 
 <p>RPC 19617</p>
