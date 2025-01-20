@@ -1,5 +1,5 @@
 ---
-name: "beerscoin-osx-1.1.0"
+name: "beerscoin-osx-1.3.0"
 enable_cache: true
 suites:
 - "focal"

@@ -1,4 +1,4 @@
-Beerscoin Core 1.1.0
+Beerscoin Core 1.3.0
 =====================
 
 Development

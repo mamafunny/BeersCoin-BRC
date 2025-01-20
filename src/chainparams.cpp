@@ -75,6 +75,7 @@ public:
     CMainParams() {
         strNetworkID = "main";
 
+        // Blocks 0 - 144999 are conventional difficulty calculation
         consensus.nSubsidyHalvingInterval = 100000;
         consensus.nMajorityEnforceBlockUpgrade = 1500;
         consensus.nMajorityRejectBlockOutdated = 1900;
@@ -110,10 +111,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // Disabled
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("000000000000000000000000000000000000000000000000014191e3c00a76b1"); // 4000
+        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000002f6b5776872eddf"); // 14530
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0xa1cb1eef8c9c7b4f7e361d710f7558f4f375f2e7ed9117bcf0ca2fbb72a658f4"); // 4000
+        consensus.defaultAssumeValid = uint256S("0x53702e35d6d4f10c3d6a20361341e307155c2bb844c7f5d94c39741609aba52f"); // 14530
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x007f; // 127
@@ -122,7 +123,7 @@ public:
         consensus.nHeightEffective = 0;
         consensus.fSimplifiedRewards = true;
 
-        // Blocks 1000 - 41,999 are Digishield without AuxPoW
+        // Blocks 1000 - 15999 are Digishield without AuxPoW
         digishieldConsensus = consensus;
         digishieldConsensus.nHeightEffective = 1000;
         digishieldConsensus.fSimplifiedRewards = true;
@@ -130,10 +131,10 @@ public:
         digishieldConsensus.nPowTargetTimespan = 60; // post-digishield: 1 minute
         digishieldConsensus.nCoinbaseMaturity = 240;
 
-        // Blocks 14,000+ are AuxPoW
+        // Blocks 16,000+ are AuxPoW
         // Some tests from Dogecoin expect non-auxpow blocks. This allows those tests to pass.
         auxpowConsensus = digishieldConsensus;
-        auxpowConsensus.nHeightEffective = 14000;
+        auxpowConsensus.nHeightEffective = 16000;
         auxpowConsensus.fAllowLegacyBlocks = false;
 
         // Assemble the binary search tree of consensus parameters
@@ -180,10 +181,7 @@ public:
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
             ( 0, uint256S("0xc8730d3a53720beb13d2b0d438d7a2bfb26038356927a9a3b7cce12a63ae6f32"))
-            ( 1000, uint256S("0x3094b8e7be0e5ac31855bdd87dfae88dc7e2a7c79190cabbc9afb05bba7933fd"))
-            ( 2000, uint256S("0x71ad4d895e5f2821d22ae3c0e3853f2456dcaf23c1a2c714909419dc28150957"))
-            ( 3000, uint256S("0xc62fc6d4cc3d9b103160e641d68bcd2ece3701654a73b010f1ffd61645d73f9e"))
-            ( 4000, uint256S("0xa1cb1eef8c9c7b4f7e361d710f7558f4f375f2e7ed9117bcf0ca2fbb72a658f4"))
+            ( 14530, uint256S("0x53702e35d6d4f10c3d6a20361341e307155c2bb844c7f5d94c39741609aba52f"))
         };
 
         chainTxData = ChainTxData{ };
@@ -203,6 +201,7 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
 
+        // Blocks 0 - 15999 are pre-Digishield
         consensus.nSubsidyHalvingInterval = 100000;
         consensus.nMajorityEnforceBlockUpgrade = 501;
         consensus.nMajorityRejectBlockOutdated = 750;
@@ -259,15 +258,15 @@ public:
         digishieldConsensus.fPowAllowMinDifficultyBlocks = false;
         digishieldConsensus.nCoinbaseMaturity = 240;
 
-        // Blocks 1250 - 41,999 are Digishield with minimum difficulty on all blocks
+        // Blocks 1250 - 15,999 are Digishield with minimum difficulty on all blocks
         minDifficultyConsensus = digishieldConsensus;
         minDifficultyConsensus.nHeightEffective = 1250;
         minDifficultyConsensus.fPowAllowDigishieldMinDifficultyBlocks = true;
         minDifficultyConsensus.fPowAllowMinDifficultyBlocks = true;
 
-        // Enable AuxPoW at 42,000
+        // Enable AuxPoW at 16,000
         auxpowConsensus = minDifficultyConsensus;
-        auxpowConsensus.nHeightEffective = 42000;
+        auxpowConsensus.nHeightEffective = 16000;
         auxpowConsensus.fPowAllowDigishieldMinDifficultyBlocks = true;
         auxpowConsensus.fAllowLegacyBlocks = false;
 
